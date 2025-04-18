@@ -1,0 +1,361 @@
+/* style.css */
+
+:root {
+    --primary-color: #111620;
+    --accent-color: #22d3ee;
+    --text-color: #e2e8f0;
+    --bg-color: #101520;
+    --card-bg: #1e293b;
+    --font: 'Poppins', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--card-bg);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--primary-color);
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+  }
+  
+  .hero-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #cbd5e1;
+  }
+  
+  .btn {
+    background-color: var(--accent-color);
+    color: #0f172a;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    background-color: #815537;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .project-card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: 500;
+  }
+  
+  footer {
+    background-color: var(--card-bg);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    color: #94a3b8;
+  }
+  
+
+.card {
+    background: rgb(255, 166, 0);
+    padding: 1px 0px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #925151;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration:none;
+}
+.card {
+    margin: 50px;
+}
+.card:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.card {
+  margin: 2rem;
+  padding: 1.5rem;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Optional: To prevent overflow on small screens */
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #1e293b ;
+  padding: 1.5rem;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px;
+  transition: transform 0.3s ease;
+}
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  color: rgb(205, 206, 226);
+}
+
+.email-btn, .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 14px;
+  color: #94a3b8;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  position:sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 100;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+body{
+  font-family: 'poppins',sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+#testimonials {
+  background-color: var(--card-bg);
+  padding: 3%;
+  max-width: 30%;
+  border-radius: 12px;
+}
+#testimonials:hover {
+
+  transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}#contact {
+  background: #0f172a;
+  padding: 3rem 0;
+  text-align: center;
+  color: rgb(248, 245, 245);
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid blue;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#contactForm textarea {
+  height: 120px;
+  resize: none;
+}
+
+#contactForm button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contactForm button:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+  background-color: #815537;
+  
+}
+
+#contact p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+.row {
+background: var(--card-bg);
+  background-color: var(--card-bg);
+}
+input,
+textarea {
+  background-color: #1e293b; /* Dark background */
+  color: #fdfdfd; /* Light text */
+  border: 1px solid #334155;
+  border-radius: 5px;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #1e293b; /* Same as default so no change on click */
+  border-color: #38bdf8; /* Highlight border when active */
+  box-shadow: 0 0 5px #38bdf8;
+}
+#contactForm:hover{
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px;
+
+}
+
+

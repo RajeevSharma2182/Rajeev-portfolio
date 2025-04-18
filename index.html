@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajeev Sharma | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("LS-CewQ4ZJTISMOje");
+    })();
+  </script>
+
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">Portfolio.dev</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#My skills">My skills</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h2>Hi, I'm Rajeev 👋</h2>
+      <h3>A Front-End Web Developer</h3>
+      <p>I build beautiful and functional websites using HTML, CSS, and JavaScript. Passionate about clean UI, smooth UX
+        and solving real-world problems.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am currently pursuing BCA and on a mission to become a top-tier web developer. I specialize in front-end
+      development, and I’m constantly learning and building new things to improve my skills and help others bring their
+      ideas to life.</p>
+    <p>
+      I'm a passionate and dedicated front-end web developer focused on creating clean, responsive, and user-friendly
+      websites. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building modern web interfaces
+      that not only look good but also deliver smooth functionality across all devices.
+
+      Currently, I’m expanding my skills by working on real-world projects, website clones, and creative layouts that
+      help me grow every single day. I believe in writing clean code, constantly learning, and turning ideas into fully
+      functional and visually appealing websites.
+
+      My ultimate goal is to help clients build their digital presence while growing my freelancing journey to the next
+      level — all with one clear mission: to create value through design, and earn the freedom I’ve always dreamed of.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>A clean and responsive landing page built with HTML & CSS.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern personal portfolio website to showcase skills and projects.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="skills">
+    <h2>My Skills</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/html.png" alt="your photo">
+        <h2>HTML</h2>
+        <p>I can build structured websites using semantic HTML. </p>
+        <a href="https://github.com" target="_blank">Github</a>
+      </div>
+      <div class="card">
+        <img src="images/css.png" alt="your photo">
+        <h2>CSS</h2>
+        <p>I design clean and responsive layouts with CSS & Flexbox. </p>
+        <a href="https://github.com" target="_blank">Github</a>
+      </div>
+      <div class="card">
+        <img src="images/js.png" alt="your photo">
+        <h2>JavaScript</h2>
+        <p>I add interactivity and dynamic features with JavaScript. </p>
+        <a href="https://github.com" target="_blank">Github</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Client Feedback</h2>
+    <div class="testimonial-card">
+      <p>"Working with Rajeev was smooth and fast!"</p>
+      <h4>— Dinesh Kumar, Delhi</h4>
+    </div>
+  </section>
+  <section id="Contact" class="contact-section">
+    <h2>
+      <strong>Contact Me</strong></h2>
+    <form id="contactForm">
+      <input type="text" name="from_name" placeholder="Your Name" required  class="row"/>
+      <input type="email" name="from_email" placeholder="Your Email" required class="row"/>
+      <textarea name="message" placeholder="Your Message" required class="row"></textarea>
+      <p>If you like my work and want to collaborate, feel free to message me.</p>
+      <button class="btn" type="submit">Send Email</button>
+    </form>
+
+   
+    
+  </section>
+  <footer>
+    <p>&copy; 2025 Rajeev Sharma. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <i class="fas fa-envelope"></i>
+
+</body>
+
+</html>
